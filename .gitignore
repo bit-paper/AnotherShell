@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Xcode user-local files
+*.xcuserstate
+**/xcuserdata/
+
+# Build outputs and temporary packaging artifacts
+build/
+DerivedData/
+
+# Swift Package Manager local caches/checkouts
+.build/
+
+# Logs
+*.log
+
