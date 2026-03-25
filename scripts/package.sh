@@ -148,6 +148,23 @@ echo "Copying app to ${DIST_APP_PATH}..."
 rm -rf "$DIST_APP_PATH"
 cp -R "$APP_PATH_IN_ARCHIVE" "$DIST_APP_PATH"
 
+# Safety prune: ensure documentation screenshots are not shipped inside runtime artifacts.
+prune_screenshot_assets() {
+  local app_path="$1"
+  local candidates=(
+    "${app_path}/Contents/Resources/docs/screenshots"
+    "${app_path}/Contents/Resources/screenshots"
+  )
+  for path in "${candidates[@]}"; do
+    if [[ -e "$path" ]]; then
+      echo "Pruning non-runtime screenshots from bundle: $path"
+      rm -rf "$path"
+    fi
+  done
+}
+
+prune_screenshot_assets "$DIST_APP_PATH"
+
 DMG_PATH="${DIST_DIR}/${SCHEME}-Beta-${VERSION}.dmg"
 PKG_PATH="${DIST_DIR}/${SCHEME}-Beta-${VERSION}.pkg"
 
