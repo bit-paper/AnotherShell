@@ -11,6 +11,17 @@
 
 AnotherShell is a native macOS SSH/SFTP client focused on a clean, stable, and productive remote workflow with integrated terminal and file transfer experience.
 
+## Why AnotherShell
+
+This project was inspired by real-world use of several excellent tools in the ecosystem, each with clear strengths and different priorities:
+
+- **FinalShell**: feature-rich and mature; however, some macOS users may notice heavier startup/interaction latency in Java-based workflows.
+- **Termius**: polished and highly complete product; for some individual developers, pricing can be a higher barrier, and the UI language may feel more mobile-oriented.
+- **Tabby**: strong cross-platform flexibility and extensibility; in certain environments, users may still experience higher resource usage or less smooth interactions.
+
+AnotherShell is not meant to replace or dismiss these tools.  
+Its goal is to offer a lighter, more **macOS-native** SSH/SFTP experience with practical defaults and a friendly bilingual workflow.
+
 ## Highlights
 
 - Native macOS tabbed SSH sessions
@@ -73,4 +84,3 @@ Default artifacts:
 ## License
 
 This project is released under the [MIT License](./LICENSE).
-
