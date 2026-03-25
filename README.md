@@ -49,14 +49,11 @@ Its goal is to offer a lighter, more **macOS-native** SSH/SFTP experience with p
 
 ## Community & Support
 
-### Fans Group
-![AnotherShell Fans Group](./docs/screenshots/wechat_group.JPG)
-
-### Author WeChat QR
-![Author WeChat](./docs/screenshots/wechat_me.JPG)
-
-### WeChat Reward (Donation)
-![WeChat Reward](./docs/screenshots/wechat_reward.JPG)
+<p align="center">
+  <img src="./docs/screenshots/wechat_group.JPG" alt="AnotherShell Fans Group" width="30%" />
+  <img src="./docs/screenshots/wechat_me.JPG" alt="Author WeChat" width="30%" />
+  <img src="./docs/screenshots/wechat_reward.JPG" alt="WeChat Reward" width="30%" />
+</p>
 
 ## Version
 
